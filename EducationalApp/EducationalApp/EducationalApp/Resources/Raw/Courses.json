@@ -1,0 +1,22 @@
+[
+  {
+    "Id": "00000000-0000-0000-0000-000000000001",
+    "Image": "course.png",
+    "Name": "Web Development: Angular",
+    "Category": "Web Development",
+    "Description": "Learn to develop web applications using the latest version of Angular and discover its full potential.",
+    "Price": 150,
+    "Calification": 4.0,
+    "CourseVideoLink": "https://pixabay.com/videos/students-books-education-teaching-66678/"
+  },
+  {
+    "Id": "00000000-0000-0000-0000-000000000002",
+    "Image": "course.png",
+    "Name": "Mobile Development: MAUI",
+    "Category": "Mobile Development",
+    "Description": "Learn to develop mobile applications using the latest version of MAUI and discover its full potential.",
+    "Price": 300,
+    "Calification": 4.9,
+    "CourseVideoLink": "https://pixabay.com/videos/students-books-education-teaching-66678/"
+  }
+]

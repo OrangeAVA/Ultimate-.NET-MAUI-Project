@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:EducationalApp.ViewModels"
+             xmlns:models="clr-namespace:EducationalApp.Models"   
+             x:Class="EducationalApp.Views.SearchView"
+             x:DataType="viewmodels:SearchViewModel">
+    <VerticalStackLayout>
+        <Frame CornerRadius="20"
+               Padding="1,1,1,0"
+               Margin="10">
+            <SearchBar Placeholder="Search courses" Text="{Binding SearchText}"/>
+        </Frame>
+
+        <ActivityIndicator IsVisible="{Binding IsLoading}"
+                    IsRunning="{Binding IsLoading}"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center" />
+
+        <CollectionView ItemsSource="{Binding FilteredCoursesList}"
+                 VerticalOptions="Fill"
+                 x:Name="CollectionCourse"
+                 Margin="10">
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout Orientation="Vertical"
+                                 Span="1"/>
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="models:Course">
+                    <Frame CornerRadius="15"
+                    BackgroundColor="White"
+                    BorderColor="#E0E0E0"
+                    Padding="10"
+                    Margin="5"
+                    HasShadow="True">
+                        <VerticalStackLayout>
+                            <Label Text="{Binding Name}"
+                            FontAttributes="Bold"
+                            FontSize="Title"
+                            InputTransparent="True" />
+
+                            <Image Source="{Binding Image}" 
+                            WidthRequest="100"
+                            Margin="5,5,5,10"/>
+
+                            <Label Text="{Binding Description}"
+                            HorizontalTextAlignment="Start"
+                            FontSize="14"
+                            InputTransparent="True" />
+
+                            <Label Text="{Binding Price, StringFormat='${0:N2}'}"
+                            FontSize="20"
+                            FontAttributes="Bold"
+                            Margin="2,10"
+                            InputTransparent="True" />
+
+                            <HorizontalStackLayout>
+
+                                <Image Source="star.png" 
+WidthRequest="30"
+HeightRequest="30"
+Margin="5,5,5,10"/>
+
+                                <Label Text="{Binding Calification, StringFormat='{0:N2}'}"
+FontSize="20"
+FontAttributes="Bold"
+Margin="2,10"
+InputTransparent="True" />
+                            </HorizontalStackLayout>
+
+                        </VerticalStackLayout>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding Path = BindingContext.DescriptionCommand, Source={Reference CollectionCourse}}"
+                                           CommandParameter="{Binding Id}"/>
+                        </Frame.GestureRecognizers>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </VerticalStackLayout>
+</ContentPage>

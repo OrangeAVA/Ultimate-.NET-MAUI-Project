@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="EducationalApp.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:EducationalApp.Views"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    Shell.FlyoutBehavior="Disabled"
+    Title="EducationalApp">
+
+    <Shell.Behaviors>
+        <toolkit:StatusBarBehavior StatusBarColor="#ffffff"
+                               StatusBarStyle="DarkContent" />
+    </Shell.Behaviors>
+
+    <ShellContent 
+               ContentTemplate="{DataTemplate views:LoginView}"
+               FlyoutItemIsVisible="False"
+               Route="LoginView" />
+
+    <ShellContent Title="Create User"
+              ContentTemplate="{DataTemplate views:UserView}"
+              FlyoutItemIsVisible="False"
+              Route="UserView" />
+
+    <TabBar>
+        <Tab Title="My Courses"
+             Icon="play.png">
+            <ShellContent
+            ContentTemplate="{DataTemplate views:MyCoursesView}"
+            Route="MyCoursesView" />
+        </Tab>
+        <Tab Title="Search"
+             Icon="search.png">
+            <ShellContent
+            ContentTemplate="{DataTemplate views:SearchView}"
+            Route="SearchView" />
+        </Tab>
+        <Tab Title="Wish List"
+             Icon="heart.png">
+            <ShellContent
+            ContentTemplate="{DataTemplate views:WishListView}"
+            Route="WishListView" />
+        </Tab>
+        <Tab Title="Account"
+             Icon="account.png">
+            <ShellContent
+            ContentTemplate="{DataTemplate views:AccountView}"
+            Route="AccountView" />
+        </Tab>
+    </TabBar>
+
+</Shell>

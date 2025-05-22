@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:EducationalApp.ViewModels"
+             x:Class="EducationalApp.Views.AccountView"
+             x:DataType="viewmodels:AccountViewModel">
+    <VerticalStackLayout Margin="10" Spacing="10">
+
+        <HorizontalStackLayout Margin="0,20,0,0">
+            <Frame Style="{StaticResource AvatarFrameStyle}"
+               Padding="15"
+               WidthRequest="70"
+               HeightRequest="70"
+               BackgroundColor="#E0E0E0">
+                <Image Source="account.png" 
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"/>
+            </Frame>
+
+            <VerticalStackLayout VerticalOptions="Center">
+                <Label Text="{Binding Title}"
+                   FontSize="Title"
+                   FontAttributes="Bold" />
+
+                <Label Text="{Binding SubTitle}"
+                   FontSize="Subtitle"
+                   TextColor="Silver" />
+            </VerticalStackLayout>
+
+        </HorizontalStackLayout>
+
+        <Button Text="Sign Out" 
+        BackgroundColor="{StaticResource LogOut}"
+        Command="{Binding SignOutCommand}"/>
+
+    </VerticalStackLayout>
+</ContentPage>

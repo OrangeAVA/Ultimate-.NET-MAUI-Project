@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EducationalApp.Views.CourseDescriptionView"
+             xmlns:viewmodels="clr-namespace:EducationalApp.ViewModels"
+             xmlns:models="clr-namespace:EducationalApp.Models"   
+             x:DataType="viewmodels:CourseDescriptionViewModel">
+    <ScrollView >
+        <Grid RowDefinitions="10*, Auto" Padding="20, 0" >
+            <VerticalStackLayout Grid.Row="0" Spacing="20">
+                <Label Text="{Binding Course.Name}"
+                       FontSize="Title"
+                       FontAttributes="Bold"/>
+
+                <Image Source="{Binding Course.Image}"
+                       HeightRequest="150"
+                       WidthRequest="150"/>
+
+                <Grid HeightRequest="35">
+                    <Label Text="Description"
+                           FontSize="25"
+                           FontAttributes="Bold"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Start" />
+
+                    <Image Source="{Binding HeartIcon}"
+                           WidthRequest="30"
+                           HeightRequest="30"
+                           VerticalOptions="Center"
+                           HorizontalOptions="End" >
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding HeartIconTapCommand}"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Grid>
+
+                <Label Text="{Binding Course.Description}"
+                       FontSize="20"/>
+
+                <Label Text="{Binding Course.Price, StringFormat='${0:0}'}"
+                       FontSize="30"
+                       FontAttributes="Bold"
+                       Margin="0,10"/>
+
+                <HorizontalStackLayout>
+
+                    <Image Source="star.png" 
+WidthRequest="30"
+HeightRequest="30"
+Margin="5,5,5,10"/>
+
+                    <Label Text="{Binding Course.Calification, StringFormat='{0:N2}'}"
+FontSize="20"
+FontAttributes="Bold"
+Margin="2,10"
+InputTransparent="True" />
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+            <Button Text="{Binding ButtonText}" Grid.Row="1"
+                    Margin="0,20"
+                    Command="{Binding TapButtonCommand}" />
+        </Grid>
+    </ScrollView>
+</ContentPage>
