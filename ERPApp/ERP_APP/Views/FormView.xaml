@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ERP_APP.Views.FormView"
+             Title="{Binding TitleView}">
+
+    <ScrollView>
+        <StackLayout>
+
+            <!-- Supplier Form -->
+            <VerticalStackLayout Padding="20"
+                                 IsVisible="{Binding IsSupplier}">
+                <Label Text="Supplier Name"
+                       FontSize="Medium" />
+                <Entry Text="{Binding SupplierName}"
+                       Placeholder="Enter the name" />
+                <Label Text="Phone"
+                       FontSize="Medium" />
+                <Entry Text="{Binding SupplierPhone}"
+                       Placeholder="Enter phone number"
+                       Keyboard="Telephone" />
+                <Label Text="Email"
+                       FontSize="Medium" />
+                <Entry Text="{Binding SupplierEmail}"
+                       Placeholder="Enter email"
+                       Keyboard="Email" />
+                <Button Text="Save Supplier"
+                        BackgroundColor="Green"
+                        TextColor="White"
+                        Margin="15"
+                        Command="{Binding SaveDataCommand}"
+                        CommandParameter="Supplier"/>
+            </VerticalStackLayout>
+
+            <!-- Customer Form -->
+            <VerticalStackLayout Padding="20"
+                                 IsVisible="{Binding IsCustomer}">
+                <Label Text="Name"
+                       FontSize="Medium" />
+                <Entry Text="{Binding CustomerName}"
+                       Placeholder="Enter name" />
+                <Label Text="Email"
+                       FontSize="Medium" />
+                <Entry Text="{Binding CustomerEmail}"
+                       Placeholder="Enter email"
+                       Keyboard="Email" />
+                <Label Text="Phone"
+                       FontSize="Medium" />
+                <Entry Text="{Binding CustomerPhone}"
+                       Placeholder="Enter phone number"
+                       Keyboard="Telephone" />
+                <Button Text="Save Customer"
+                        BackgroundColor="Blue"
+                        TextColor="White"
+                        Command="{Binding SaveDataCommand}"
+                        CommandParameter="Customer" />
+            </VerticalStackLayout>
+
+            <!-- Purchase Form -->
+            <VerticalStackLayout Padding="20"
+                                 IsVisible="{Binding IsPurchase}">
+                <Label Text="Supplier"
+                       FontSize="Medium" />
+
+                <Frame Padding="10,1"
+                       Margin="0,10,0,10"
+                       CornerRadius="10">
+                    <VerticalStackLayout>
+                        <Picker Title="Select an Options"
+                                ItemsSource="{Binding Options}"
+                                ItemDisplayBinding="{Binding Name}"
+                                SelectedItem="{Binding SelectedSupplier, Mode=TwoWay}" />
+                    </VerticalStackLayout>
+                </Frame>
+                
+                <Label Text="Date"
+                       FontSize="Medium" />
+                <DatePicker Date="{Binding PurchaseDate}" />
+                
+                <Button Text="Add product"
+                        Margin="0,10"
+                        BackgroundColor="Green"
+                        TextColor="White"
+                        Command="{Binding NewProductCommand}"
+                        CommandParameter="Purchase" />
+
+                <Label Text="{Binding Produts}"
+                       LineBreakMode="WordWrap"
+                       Padding="10" 
+                       Margin="0,10"/>
+
+                <Label Text="Total"
+                       FontSize="Medium" />
+
+                <Entry Text="{Binding PurchaseTotal}"
+                       Placeholder="$0.00"
+                       Keyboard="Numeric"
+                       IsEnabled="False"
+                       Margin="0,10" />
+
+                <Button Text="Save Purchase"
+                        BackgroundColor="Purple"
+                        TextColor="White"
+                        Command="{Binding SaveDataCommand}"
+                        CommandParameter="Purchase" />
+            </VerticalStackLayout>
+
+            <!-- Sale Form -->
+            <VerticalStackLayout Padding="20"
+                                 IsVisible="{Binding IsSale}">
+                <Label Text="Product"
+                       FontSize="Medium" />
+                <Frame Padding="10,1"
+                       Margin="0,10,0,10"
+                       CornerRadius="10">
+                    <VerticalStackLayout>
+                        <Picker Title="Select an Options"
+                                ItemsSource="{Binding OptionsWareHouses}"
+                                ItemDisplayBinding="{Binding Name}"
+                                SelectedItem="{Binding SelectedWareHouses, Mode=TwoWay}" />
+                    </VerticalStackLayout>
+                </Frame>
+                <Label Text="Unit"
+                       FontSize="Medium" />
+                <Entry Text="{Binding UnitSales}"
+                       Placeholder="Enter location"
+                       Keyboard="Numeric" />
+                <Button Text="Save Warehouse"
+                        BackgroundColor="Teal"
+                        TextColor="White"
+                        Command="{Binding SaveDataCommand}"
+                        CommandParameter="Warehouse" />
+            </VerticalStackLayout>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

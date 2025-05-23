@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ERP_APP.Views.AboutView"
+             Title="About"
+             BackgroundColor="{DynamicResource BackgroundColor}">
+    <VerticalStackLayout Padding="0"
+                         Spacing="15"
+                         VerticalOptions="Start">
+        <Image Source="dotnet_bot.png"
+               WidthRequest="100"
+               HeightRequest="100"
+               HorizontalOptions="Center" />
+
+        <Label Text="My App"
+               FontSize="24"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               TextColor="{DynamicResource PrimaryTextColor}" />
+
+        <Label Text="Version: 1.0.0"
+               FontSize="18"
+               HorizontalOptions="Center"
+               TextColor="{DynamicResource SecondaryTextColor}" />
+
+        <Label Text="Release Date: 2025-02-17"
+               FontSize="16"
+               HorizontalOptions="Center"
+               TextColor="{DynamicResource SecondaryTextColor}" />
+
+        <Label Text="Built with .NET MAUI"
+               FontSize="16"
+               FontAttributes="Italic"
+               HorizontalOptions="Center"
+               TextColor="{DynamicResource AccentColor}" />
+
+        <BoxView HeightRequest="1"
+                 WidthRequest="100"
+                 BackgroundColor="{DynamicResource SecondaryTextColor}"
+                 HorizontalOptions="Center" />
+
+        <Label Text="Modern, cross-platform and powerful!"
+               FontSize="14"
+               HorizontalOptions="Center"
+               TextColor="{DynamicResource SecondaryTextColor}" />
+    </VerticalStackLayout>
+</ContentPage>

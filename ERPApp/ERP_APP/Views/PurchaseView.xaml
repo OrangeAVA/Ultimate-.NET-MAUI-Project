@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:controls="clr-namespace:ERP_APP.Controls"
+             xmlns:models="clr-namespace:ERP_APP.Models"
+             x:Class="ERP_APP.Views.PurchaseView"
+             Title="PurchaseView">
+    <StackLayout>
+        <Grid RowDefinitions="auto, 30, *, auto"
+              VerticalOptions="FillAndExpand">
+
+            <controls:CustomSearchControl Grid.Row="0" />
+
+            <ActivityIndicator Grid.Row="1"
+                               IsVisible="{Binding  IsVisible}"
+                               IsRunning="{Binding  IsVisible}" />
+
+            <VerticalStackLayout  Grid.Row="2"
+                                  Margin="0,0,0,0"
+                                  Padding="20,0,20,20">
+                <CollectionView ItemsSource="{Binding Items}"
+                                HorizontalOptions="FillAndExpand"
+                                x:Name="CollectionItems"
+                                HeightRequest="500">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="models:ItemSupplier">
+                            <Frame Padding="15,0,15,0"
+                                   Margin="0,0,0,15"
+                                   BorderColor="{StaticResource Primary}">
+                                <Grid ColumnDefinitions="auto,*,auto,1,auto"
+                                      Padding="0">
+                                   
+                                    <Label Text="{Binding Date}"
+                                           Grid.Column="0"
+                                           VerticalTextAlignment="Center"
+                                           FontSize="Subtitle" />
+
+
+                                    <Label Text="{Binding Name}"
+                                           VerticalTextAlignment="Center"
+                                           HorizontalTextAlignment="Center"
+                                           FontSize="Subtitle"
+                                           Grid.Column="1" />
+
+                                    <Label Text="{Binding Total}"
+                                           Margin="0,0,10,0"
+                                           VerticalTextAlignment="Center"
+                                           HorizontalTextAlignment="Center"
+                                           FontSize="Subtitle"
+                                           Grid.Column="2" />
+
+                                    <BoxView WidthRequest="1"
+                                             HeightRequest="50"
+                                             BackgroundColor="{StaticResource Primary}"
+                                             HorizontalOptions="Center"
+                                             VerticalOptions="Center"
+                                             Grid.Column="3" />
+
+                                    <Image Source="delete.png"
+                                           Grid.Column="4"
+                                           WidthRequest="25"
+                                           Margin="10,0,0,0">
+                                        <Image.GestureRecognizers>
+                                            <TapGestureRecognizer Command="{Binding Path = BindingContext.TapButtonItemCommand, Source={Reference CollectionItems}}"
+                                                                  CommandParameter="{Binding Id}" />
+                                        </Image.GestureRecognizers>
+                                    </Image>
+
+                                </Grid>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+            </VerticalStackLayout>
+
+            <Button Grid.Row="3"
+                    WidthRequest="150"
+                    Text="Add new record"
+                    FontSize="16"
+                    Padding="5"
+                    Margin="0,0,0,20"
+                    Command="{Binding TapButtonAddNewRecordsCommand}"></Button>
+        </Grid>
+
+
+
+
+    </StackLayout>
+</ContentPage>

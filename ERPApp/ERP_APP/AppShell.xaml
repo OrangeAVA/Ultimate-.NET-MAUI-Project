@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="ERP_APP.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    xmlns:local="clr-namespace:ERP_APP"
+    xmlns:view="clr-namespace:ERP_APP.Views"
+    Shell.TabBarIsVisible="False"
+    Shell.BackgroundColor="#6200EE"
+    Shell.ForegroundColor="White"
+    Shell.TitleColor="White"
+    Shell.NavBarHasShadow="False">
+
+    <Shell.Behaviors>
+        <toolkit:StatusBarBehavior StatusBarColor="#ffffff"
+                                   StatusBarStyle="DarkContent" />
+    </Shell.Behaviors>
+
+    <Shell.FlyoutHeader>
+        <Grid BackgroundColor="#6200EE"
+              Padding="20"
+              HeightRequest="150">
+            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="80" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Image Source="avatar.png"
+                   Grid.Column="0"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center" />
+
+            <StackLayout Grid.Column="1"
+                         VerticalOptions="Center"
+                         Padding="10">
+                <Label Text="{Binding UserName}"
+                       FontSize="18"
+                       TextColor="White"
+                       FontAttributes="Bold" />
+                <Label Text="{Binding UserEmail}"
+                       FontSize="14"
+                       TextColor="White" />
+            </StackLayout>
+        </Grid>
+    </Shell.FlyoutHeader>
+
+    <ShellContent Title="Login"
+                  ContentTemplate="{DataTemplate view:LoginView}"
+                  FlyoutItemIsVisible="False"
+                  Shell.FlyoutBehavior="Disabled"
+                  Route="LoginPage" />
+
+    <ShellContent Title="CreateUserPage"
+                  ContentTemplate="{DataTemplate view:UserView}"
+                  FlyoutItemIsVisible="False"
+                  Shell.FlyoutBehavior="Disabled"
+                  Route="CreateUserPage" />
+
+    <FlyoutItem Route="AccountsPageView"
+                FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent Title="DashBoard"
+                      Icon="dash.png"
+                      ContentTemplate="{DataTemplate view:DashBoardView}" />
+        <ShellContent Title="Account"
+                      Icon="account.png"
+                      ContentTemplate="{DataTemplate view:UserView}" />
+        <ShellContent Title="About"
+                      Icon="about.png"
+                      ContentTemplate="{DataTemplate view:AboutView}" />
+    </FlyoutItem>
+    
+    
+    <!---->
+    <Shell.FlyoutFooter>
+        <StackLayout Padding="20">
+            <Button Text="Sign Out"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    BackgroundColor="{StaticResource Primary}"
+                    Command="{Binding TapButtonSingOutCommand}"/>
+        </StackLayout>
+    </Shell.FlyoutFooter>
+
+</Shell>

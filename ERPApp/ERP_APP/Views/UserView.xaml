@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ERP_APP.Views.UserView"
+             Title="UserView">
+    <ScrollView>
+        <VerticalStackLayout Spacing="20"
+                             Padding="20">
+            <!-- Imagen de perfil -->
+            <Grid HorizontalOptions="Center"
+                  VerticalOptions="Start">
+
+                <Ellipse WidthRequest="150"
+                         HeightRequest="150"
+                         Fill="{StaticResource Primary}" />
+
+                <Image Source="dotnet_bot"
+                       WidthRequest="100"
+                       HeightRequest="100"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center" />
+            </Grid>
+
+            <Entry Placeholder="User Name"
+                   Text="{Binding UserName}" />
+
+            <Entry Placeholder="Email Address"
+                   Keyboard="Email"
+                   Text="{Binding Email}"/>
+
+            <Entry Placeholder="Password"
+                   IsPassword="True"
+                   Text="{Binding Pass}" />
+
+            <Button Text="{Binding TextButtonSaved}"
+                    BackgroundColor="#3b5998"
+                    TextColor="White"
+                    CornerRadius="5"
+                    HorizontalOptions="Fill"
+                    Command="{Binding TapSavedCommand}" />
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

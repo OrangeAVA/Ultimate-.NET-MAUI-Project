@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ERP_APP.Views.DashBoardView"
+             xmlns:models="clr-namespace:ERP_APP.Models"
+             Title="DashBoard">
+    <VerticalStackLayout>
+        <CollectionView ItemsSource="{Binding OptionDashBoard}"
+                        VerticalOptions="FillAndExpand"
+                        x:Name="CollectionItems"
+                        Margin="15">
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout Orientation="Vertical"
+                                 Span="3"
+                                 VerticalItemSpacing="15"/>
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="models:DashBoard">
+                    <Frame Grid.Row="0"
+                           CornerRadius="20"
+                           BackgroundColor="White"
+                           BorderColor="#E0E0E0"
+                           WidthRequest="110"
+                           Padding="10"
+                           HasShadow="False">
+
+                        <VerticalStackLayout Spacing="2"
+                                             HorizontalOptions="Center">
+
+                            <!-- Avatar -->
+                            <Frame Padding="15,5"
+                                   WidthRequest="70"
+                                   HeightRequest="70"
+                                   CornerRadius="40"
+                                   BorderColor="Transparent"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center">
+
+                                <Image Source="{Binding Image}"
+                                       Aspect="AspectFit"
+                                       VerticalOptions="Center"
+                                       HorizontalOptions="Center">
+
+                                    <Image.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding Path = BindingContext.TapButtonOptionCommand, Source={Reference CollectionItems}}"
+                                                              CommandParameter="{Binding Page}" />
+                                    </Image.GestureRecognizers>
+                                </Image>
+                                <Frame.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding Path = BindingContext.TapButtonOptionCommand, Source={Reference CollectionItems}}"
+                                                          CommandParameter="{Binding Page}" />
+                                </Frame.GestureRecognizers>
+                            </Frame>
+
+                            <!-- Texto -->
+                            <Label Text="{Binding Title}"
+                                   HorizontalTextAlignment="Center"
+                                   FontSize="16"
+                                   FontAttributes="Bold"
+                                   TextColor="Black"
+                                   InputTransparent="True" />
+                        </VerticalStackLayout>
+                       
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </VerticalStackLayout>
+    
+</ContentPage>
