@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="EcommerceApp.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:EcommerceApp.Views"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    xmlns:local="clr-namespace:EcommerceApp"
+    Shell.FlyoutBehavior="Disabled"
+    Title="EcommerceApp">
+
+    <Shell.Behaviors>
+        <toolkit:StatusBarBehavior StatusBarColor="#ffffff"
+                                   StatusBarStyle="DarkContent" />
+    </Shell.Behaviors>
+
+    <TabBar>
+        <Tab Title="Home"
+             Icon="home.png">
+            <ShellContent ContentTemplate="{DataTemplate views:HomeView}" />
+        </Tab>
+        <Tab Title="Account"
+             Icon="account.png">
+            <ShellContent ContentTemplate="{DataTemplate views:AccountView}" />
+        </Tab>
+        <Tab Title="Shop Cart"
+             Icon="shopcart.png">
+            <ShellContent ContentTemplate="{DataTemplate views:ShoppingCartView}" />
+        </Tab>
+        <Tab Title="Menu"
+             Icon="menu.png">
+            <ShellContent ContentTemplate="{DataTemplate views:MenuView}" />
+        </Tab>
+    </TabBar>
+
+
+</Shell>

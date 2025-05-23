@@ -1,0 +1,56 @@
+[
+    {
+      "Id": "00000000-0000-0000-0000-000000000001",
+      "Image": "house.png",
+      "Name": "House",
+      "Category": "Home",
+      "Description": "Enjoy high-quality furniture and accessories for your home. Find the perfect coffee table for your living room.",
+      "Price": 250,
+      "Stock": 3
+    },
+    {
+      "Id": "00000000-0000-0000-0000-000000000002",
+      "Image": "tecno.png",
+      "Name": "Technology",
+      "Category": "Electronics",
+      "Description": "Latest gadgets and tech devices. Discover the newest smartphones, computers, and accessories.",
+      "Price": 100,
+      "Stock": 2
+    },
+    {
+      "Id": "00000000-0000-0000-0000-000000000003",
+      "Image": "music.png",
+      "Name": "Music",
+      "Category": "Entertainment",
+      "Description": "Everything for music lovers. Find sound systems, instruments, and accessories to enhance your musical experience.",
+      "Price": 95,
+      "Stock": 5
+    },
+    {
+      "Id": "00000000-0000-0000-0000-000000000004",
+      "Image": "phone.png",
+      "Name": "Phone",
+      "Category": "Electronics",
+      "Description": "Explore the latest mobile phones from top brands. Find the perfect smartphone for you.",
+      "Price": 260,
+      "Stock": 1
+    },
+    {
+      "Id": "00000000-0000-0000-0000-000000000005",
+      "Image": "car.png",
+      "Name": "Vehicles",
+      "Category": "Automotive",
+      "Description": "From new cars to accessories and spare parts. Find the best for your vehicle here.",
+      "Price": 2000,
+      "Stock": 4
+    },
+    {
+      "Id": "00000000-0000-0000-0000-000000000006",
+      "Image": "clothes.png",
+      "Name": "Fashion",
+      "Category": "Apparel",
+      "Description": "Discover the latest fashion trends. Clothing, footwear, and accessories to always stay stylish.",
+      "Price": 2020,
+      "Stock": 0
+    }
+ ]

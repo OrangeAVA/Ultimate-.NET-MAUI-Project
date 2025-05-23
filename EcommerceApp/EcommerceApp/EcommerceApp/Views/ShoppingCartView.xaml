@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:viewmodels="clr-namespace:EcommerceApp.ViewModels"
+             xmlns:models="clr-namespace:EcommerceApp.Models"
+             x:DataType="viewmodels:ShoppingCartViewModel"
+             x:Class="EcommerceApp.Views.ShoppingCartView"
+             x:Name="Page"
+             Title="">
+    <Grid RowDefinitions="*,auto" Padding="10">
+        <CollectionView ItemsSource="{Binding Items}"
+                        VerticalOptions="Fill"
+                        Margin="10">
+            
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="models:Item">
+                    <SwipeView>
+                        <SwipeView.LeftItems>
+                            <SwipeItems>
+                                <SwipeItem IconImageSource="delete_white.png"                                             
+                                           BackgroundColor="Red"
+                                           Command="{Binding BindingContext.DeletedItemCommand, Source={x:Reference Page}}"
+                                           CommandParameter="{Binding .}">
+                                </SwipeItem>
+                            </SwipeItems>
+                        </SwipeView.LeftItems>
+
+                        <Frame BorderColor="Transparent"
+                               Padding="0">
+                            <HorizontalStackLayout>
+                                <Frame CornerRadius="15"
+                                       BackgroundColor="White"
+                                       BorderColor="#E0E0E0"
+                                       Padding="8"
+                                       Margin="5"
+                                       HasShadow="True">
+                                    <Image Source="{Binding Image}"
+                                           WidthRequest="100" />
+                                </Frame>
+                                <VerticalStackLayout VerticalOptions="Center"
+                                                     Padding="10,0,0,0">
+                                    <Label Text="{Binding Name}"
+                                           FontSize="17"
+                                           FontAttributes="Bold" />
+
+                                    <Label Text="{Binding Quantity, StringFormat='Quantity: {0}'}"
+                                           FontSize="17"
+                                           TextColor="Silver" />
+
+                                    <Label Text="{Binding Price, StringFormat='Price: ${0}'}"
+                                           FontSize="17"
+                                           TextColor="Silver" />
+
+                                </VerticalStackLayout>
+                            </HorizontalStackLayout>
+                        </Frame>
+                    </SwipeView>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <Button Text="Buy"
+                Grid.Row="1"
+                Command="{Binding BuyProccessCommand}"/>
+    </Grid>
+</ContentPage>

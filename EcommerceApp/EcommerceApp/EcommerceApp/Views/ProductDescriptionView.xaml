@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EcommerceApp.Views.ProductDescriptionView"
+             Title="">
+    <ScrollView>
+        <VerticalStackLayout Padding="20, 0">
+            <Label Text="{Binding ProductName}"
+                   FontSize="Title"
+                   FontAttributes="Bold"/>
+
+            <Image Source="{Binding ProductImage}"/>
+
+            <Grid HeightRequest="35"  Padding="0,5">
+                <Label Text="Description"
+                       FontSize="22"
+                       FontAttributes="Bold"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Start" />
+
+                <Image Source="{Binding HeartIcon}"
+                       WidthRequest="30"
+                       HeightRequest="30"
+                       VerticalOptions="Center"
+                       HorizontalOptions="End" >
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding HeartIconTapCommand}"/>
+                    </Image.GestureRecognizers>
+                </Image>
+            </Grid>
+
+            <Label Text="{Binding ProductDescription}"
+                   Margin="0,10" />
+
+            <Label Text="{Binding Product.Price, StringFormat='${0:0}'}"
+                   FontSize="30"
+                   FontAttributes="Bold"
+                   Margin="0,10"/>
+
+            <Picker ItemsSource="{Binding QuantityItem}"
+                    SelectedItem="{Binding SelectedQuantity}"
+                    ItemDisplayBinding="{Binding Name}"
+                    Title="Section Amount"
+                    FontSize="15"
+                    FontAttributes="Bold"/>
+
+            <Button Text="{Binding ButtonText}"
+                    Margin="0,20"
+                    IsEnabled="{Binding IsEnabledButton}"
+                    Command="{Binding TapButtonCommand}" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

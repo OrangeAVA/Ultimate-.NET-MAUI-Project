@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EcommerceApp.Views.PurchaseView"
+             Title="PurchaseView">
+    <ScrollView>
+        <VerticalStackLayout Padding="20"
+                             Spacing="10">
+            <!-- Total -->
+            <Label Text="{Binding Total, StringFormat='$Total: {0:0}'}"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+
+            <BoxView HeightRequest="1"
+                     Color="Red"
+                     Margin="0,10" />
+
+
+            <!-- Address -->
+            <Label Text="Address"
+                   FontSize="18"
+                   FontAttributes="Bold" />
+
+            <Entry Placeholder="Recipient's Name"
+                   Text="{Binding RecipientName}" />
+            <Entry Placeholder="Street"
+                   Text="{Binding Street}" />
+            <Entry Placeholder="Exterior Number"
+                   Text="{Binding ExteriorNumber}" />
+            <Entry Placeholder="Interior Number"
+                   Text="{Binding InteriorNumber}" />
+            <Entry Placeholder="Neighborhood"
+                   Text="{Binding Neighborhood}" />
+            <Entry Placeholder="City"
+                   Text="{Binding City}" />
+            <Entry Placeholder="State"
+                   Text="{Binding State}" />
+            <Entry Placeholder="Postal Code"
+                   Text="{Binding PostalCode}" />
+            <Entry Placeholder="Phone"
+                   Text="{Binding Phone}"
+                   Keyboard="Telephone" />
+
+
+            <BoxView HeightRequest="1"
+                     Color="Red" Margin="0,10"/>
+
+            <!-- Payment Method -->
+            <Label Text="Payment Method"
+                   FontSize="18"
+                   FontAttributes="Bold" />
+            
+            <RadioButton Content="Cash Payment"
+                         Value="Cash Payment"
+                         IsChecked="True" />
+
+            <BoxView HeightRequest="1"
+                     Color="Red"
+                     Margin="0,10" />
+
+            <!-- Pay Button -->
+            <Button Text="Pay"
+                    BackgroundColor="#3B5998"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Fill"
+                    Command="{Binding TapBuyCommand}"/>
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
