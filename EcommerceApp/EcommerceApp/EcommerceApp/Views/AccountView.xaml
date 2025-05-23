@@ -16,11 +16,11 @@
                    HeightRequest="70"
                    BackgroundColor="#E0E0E0">
                 <Image Source="account.png" 
-                       VerticalOptions="CenterAndExpand"
-                       HorizontalOptions="CenterAndExpand"/>
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"/>
             </Frame>
 
-            <VerticalStackLayout VerticalOptions="CenterAndExpand">
+            <VerticalStackLayout VerticalOptions="Center">
                 <Label Text="{Binding Title}"
                        FontSize="Title"
                        FontAttributes="Bold" />
