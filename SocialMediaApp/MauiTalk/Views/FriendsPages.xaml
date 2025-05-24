@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="MauiTalk.Views.FriendsPages"
+             Title="">
+    <VerticalStackLayout>
+        <Grid RowDefinitions="auto,*">
+            <Grid Margin="0,20,10,10"
+                  Padding="10,0"
+                  ColumnDefinitions="*,50"
+                  Grid.Row="0">
+                <Label Text="Publicaciones"
+                       Grid.Column="0"
+                       TextColor="{StaticResource Primary}"
+                       VerticalTextAlignment="Center"
+                       FontSize="28" />
+                <Button  Grid.Column="2"
+                         Text="+"
+                         Padding="0"
+                         FontSize="40"
+                         BackgroundColor="#0CA789"
+                         BorderColor="#0CA789"
+                         WidthRequest="45"
+                         HeightRequest="45"
+                         CornerRadius="50"
+                         Command="{Binding BtnAddTapCommand}"/>
+            </Grid>
+
+            <CollectionView ItemsSource="{Binding NewsPosts}"
+                            Grid.Row="1"
+                            x:Name="newsPost"
+                            MaximumHeightRequest="650"
+                            Margin="0,0,0,50">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+
+                        <Frame Margin="15,15,15,10"
+                               Padding="10">
+                            <VerticalStackLayout>
+                                <Grid ColumnDefinitions="auto,*,110">
+                                    <Frame Grid.Column="0"
+                                           CornerRadius="50"
+                                           WidthRequest="37"
+                                           HeightRequest="37"
+                                           BackgroundColor="White"
+                                           Padding="0"
+                                           BorderColor="Red"
+                                           Margin="0,5,15,5"
+                                           HasShadow="True">
+                                        <Image Source="pedro.jpeg"
+                                               WidthRequest="50"
+                                               HeightRequest="50"
+                                               Margin="0" />
+
+                                    </Frame>
+                                    <Label Grid.Column="1"
+                                           VerticalTextAlignment="Center"
+                                           FontSize="15"
+                                           FontFamily="Arias"
+                                           Text="{Binding UserName}"
+                                           TextColor="Black" />
+                                    <Label Grid.Column="2"
+                                           VerticalTextAlignment="Center"
+                                           FontSize="15"
+                                           FontFamily="Arias"
+                                           Text="{Binding Date, StringFormat='{}{0:dd MMM yyyy}'}"
+                                           TextColor="Black" />
+                                </Grid>
+                                <Frame Margin="0"
+                                       BorderColor="White">
+                                    <Label TextTransform="Lowercase"
+                                           Text="{Binding Post}" />
+                                </Frame>
+                                <HorizontalStackLayout Margin="0">
+                                    <Image Source="like.png"
+                                           WidthRequest="22"
+                                           Margin="0,0,5,0"></Image>
+                                    <Image Source="like.png"
+                                           WidthRequest="22"
+                                           Rotation="180"></Image>
+                                </HorizontalStackLayout>
+                            </VerticalStackLayout>
+                        </Frame>
+
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>

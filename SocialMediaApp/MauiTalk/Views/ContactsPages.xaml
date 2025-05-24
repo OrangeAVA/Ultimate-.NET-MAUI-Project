@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiTalk.Views.ContactsPages"
+             Title="">
+    <VerticalStackLayout>
+        <Grid RowDefinitions="auto,auto,*">
+            <Grid Margin="0,20,10,10"
+                  Padding="10,0"
+                  ColumnDefinitions="*,50"
+                  Grid.Row="0">
+                <Label Text="Contacts"
+                       Grid.Column="0"
+                       TextColor="{StaticResource Primary}"
+                       VerticalTextAlignment="Center"
+                       FontSize="28" />
+            </Grid>
+            
+            <ActivityIndicator Grid.Row="1"
+                               IsVisible="{Binding  IsVisible}"
+                               IsRunning="{Binding  IsVisible}"
+                               HeightRequest="40"/>
+            
+            <CollectionView ItemsSource="{Binding ContactsList}" 
+                            Grid.Row="2"
+                            x:Name="CollectionContact"
+                            MaximumHeightRequest="650"
+                            Margin="0,0,0,50">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame Margin="10,5,10,8"
+                               CornerRadius="10"
+                               BorderColor="#ffffff"
+                               Padding="10,2,0,2"
+                               HasShadow="False">
+                            <Grid ColumnDefinitions="auto,*,*"
+                                  ColumnSpacing="5">
+
+                                <Frame Style="{StaticResource AvatarFrameStyle}"
+                                       Grid.Column="0">
+                                    <Image  Style="{StaticResource AvatarImageStyle}"
+                                            Source="user.png" 
+                                            WidthRequest="50"/>
+                                </Frame>
+                                
+                                <Label Grid.Column="1"
+                                       VerticalTextAlignment="Center"
+                                       FontSize="15"
+                                       FontFamily="Arias"
+                                       Text="{Binding DisplayName}"
+                                       TextColor="Black" />
+                                
+                                <Label Grid.Column="2"
+                                       VerticalTextAlignment="Center"
+                                       HorizontalTextAlignment="Center"
+                                       FontSize="18"
+                                       FontFamily="Arias"
+                                       Text="{Binding Phones[0]}"
+                                       TextColor="Black" />
+                                <Grid.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding Path = BindingContext.TapContactCommand, Source={Reference CollectionContact}}"
+                                                          CommandParameter="{Binding}" />
+                                </Grid.GestureRecognizers>
+                            </Grid>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>

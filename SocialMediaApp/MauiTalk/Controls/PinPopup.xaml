@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<toolkit:Popup xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+               xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+               xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+               x:Class="MauiTalk.Controls.PinPopup"
+               CanBeDismissedByTappingOutsideOfPopup="False">
+
+    <Frame Padding="20"
+           BackgroundColor="White"
+           CornerRadius="20"
+           WidthRequest="300"
+           VerticalOptions="Center"
+           HorizontalOptions="Center"
+           HasShadow="True">
+
+        <VerticalStackLayout Spacing="15">
+
+            <Label Text="Enter your PIN"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="Black" />
+
+            <Entry x:Name="pinEntry"
+                   Placeholder="••••"
+                   Keyboard="Numeric"
+                   MaxLength="4"
+                   IsPassword="True"
+                   HorizontalTextAlignment="Center"
+                   FontSize="24" />
+
+            <Button Text="Submit"
+                    Clicked="OnSubmitClicked"
+                    BackgroundColor="#0CA789"
+                    TextColor="White"
+                    CornerRadius="10"
+                    Padding="10,5" />
+
+        </VerticalStackLayout>
+    </Frame>
+</toolkit:Popup>

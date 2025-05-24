@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiTalk.Views.MessagesPages"
+             BackgroundColor="White"
+             Title="{Binding DisplayName}">
+    
+    <Grid RowDefinitions="*, Auto">
+
+        <!-- Messages -->
+        <CollectionView ItemsSource="{Binding Messages}"
+                        Grid.Row="0"
+                        Margin="10"
+                        x:Name="MessagesCollectionView"
+                        ItemsUpdatingScrollMode="KeepLastItemInView">
+
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout Orientation="Vertical" />
+            </CollectionView.ItemsLayout>
+
+            <CollectionView.ItemTemplate>
+
+                <DataTemplate>
+                    <Frame Padding="10"
+                           Margin="5"
+                           CornerRadius="15"
+                           BackgroundColor="{Binding IsMine, Converter={StaticResource BoolToColorConverter}}"
+                           HorizontalOptions="{Binding IsMine, Converter={StaticResource BoolToAlignmentConverter}}">
+                        <Label Text="{Binding Text}"
+                               TextColor="White" />
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <!-- Text box and submit button -->
+        <StackLayout Grid.Row="1"
+                     Orientation="Horizontal"
+                     Padding="10"
+                     Margin="0,0,0,10"
+                     BackgroundColor="White">
+            
+            <Entry x:Name="MessageEntry"
+                   Placeholder="Write a message..."
+                   HorizontalOptions="Fill"
+                   Text="{Binding MessageText}"
+                   VerticalTextAlignment="End" />
+
+            <Button Text="Send"
+                    WidthRequest="80"
+                    Command="{Binding SendMessageCommand}"/>
+        </StackLayout>
+
+    </Grid>
+</ContentPage>

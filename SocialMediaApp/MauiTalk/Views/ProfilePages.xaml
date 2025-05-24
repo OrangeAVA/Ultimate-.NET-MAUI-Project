@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiTalk.Views.ProfilePages"
+             Title="">
+    <VerticalStackLayout>
+        <Grid RowDefinitions="*,*,*,*,*">
+            <Frame Grid.Row="0"
+                   CornerRadius="100"
+                   WidthRequest="200"
+                   HeightRequest="200"
+                   BackgroundColor="White"
+                   Padding="0"
+                   BorderColor="Red"
+                   Margin="5,45,5,20"
+                   HasShadow="True">
+                <Image Source="pedro.jpeg"
+                       WidthRequest="270"
+                       HeightRequest="270"
+                       Margin="0" />
+            </Frame>
+            <Grid  Grid.Row="1"
+                   ColumnDefinitions="50,*"
+                   Margin="15">
+                <Frame Grid.Column="0"
+                       CornerRadius="50"
+                       WidthRequest="37"
+                       HeightRequest="37"
+                       BackgroundColor="White"
+                       Padding="0"
+                       BorderColor="{StaticResource Primary}"
+                       Margin="0,5,5,5"
+                       HasShadow="True">
+                    <Image Source="icon_profile.png"
+                           WidthRequest="20"
+                           HeightRequest="20"
+                           Margin="0" />
+                </Frame>
+                <Frame Margin="0"
+                       Padding="10,0"
+                       Grid.Column="1">
+                    <Entry Text="{Binding UserName}"
+                           Margin="0" />
+                </Frame>
+            </Grid>
+            <Grid  Grid.Row="2"
+                   ColumnDefinitions="50,*"
+                   Margin="15">
+                <Frame Grid.Column="0"
+                       CornerRadius="50"
+                       WidthRequest="37"
+                       HeightRequest="37"
+                       BackgroundColor="White"
+                       Padding="0"
+                       BorderColor="{StaticResource Primary}"
+                       Margin="0,5,5,5"
+                       HasShadow="True">
+                    <Image Source="icon_phone.png"
+                           WidthRequest="20"
+                           HeightRequest="20"
+                           Margin="0" />
+                </Frame>
+                <Frame Margin="0"
+                       Padding="10,0"
+                       Grid.Column="1">
+                    <Entry Text="{Binding PhoneNumber}"
+                           Margin="0" />
+                </Frame>
+            </Grid>
+            <Grid  Grid.Row="3"
+                   ColumnDefinitions="50,*"
+                   Margin="15">
+                <Frame Grid.Column="0"
+                       CornerRadius="50"
+                       WidthRequest="37"
+                       HeightRequest="37"
+                       BackgroundColor="White"
+                       Padding="0"
+                       BorderColor="{StaticResource Primary}"
+                       Margin="0,5,5,5"
+                       HasShadow="True">
+                    <Image Source="lock.png"
+                           WidthRequest="20"
+                           HeightRequest="20"
+                           Margin="0" />
+                </Frame>
+                <Frame Margin="0"
+                       Padding="10,0"
+                       Grid.Column="1">
+                    <StackLayout Orientation="Horizontal">
+                        <Entry Text="{Binding Pin}"
+                               Margin="0"
+                               IsPassword="{Binding IsPass}" 
+                               HorizontalOptions="Fill"/>
+                        <Image Source="eye.png"
+                               WidthRequest="30"
+                               HeightRequest="30"
+                               Grid.Column="2"
+                               Margin="0">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapImageEyeCommand}" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </StackLayout>
+                </Frame>
+            </Grid>
+            <Button Grid.Row="4"
+                    Text="{Binding BtnText}"
+                    FontSize="22"
+                    WidthRequest="150"
+                    Margin="0,10,0,0"
+                    Command="{Binding EditTapBtnCommand}"/>
+        </Grid>
+
+    </VerticalStackLayout>
+</ContentPage>

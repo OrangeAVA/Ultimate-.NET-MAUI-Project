@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:android="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific;assembly=Microsoft.Maui.Controls"
+             x:Class="MauiTalk.Views.ChatPages"
+             IconImageSource="dotnet_bot.png"
+             Title="">
+
+    <ContentPage.Behaviors>
+        <toolkit:StatusBarBehavior StatusBarColor="#ffffff"
+                                   StatusBarStyle="DarkContent" />
+    </ContentPage.Behaviors>
+
+    <VerticalStackLayout>
+        <Grid RowDefinitions="auto,auto,*">
+            
+            <Frame Style="{StaticResource FrameMainStyle}"
+                   Grid.Row="0">
+                <Label Text="ChatAPP"
+                       Style="{StaticResource TitleLabelStyle}" />
+            </Frame>
+            
+            <ActivityIndicator Grid.Row="1"
+                               IsVisible="{Binding  IsVisible}"
+                               IsRunning="{Binding  IsVisible}"
+                               HeightRequest="40" />
+
+            <CollectionView ItemsSource="{Binding ChatsList}"
+                            Grid.Row="2"
+                            x:Name="ChatContact"
+                            MaximumHeightRequest="650"
+                            Margin="0,0,0,50">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+
+                        <Frame  Style="{StaticResource ContactFrameStyle}">
+                            <Grid Style="{StaticResource ContactGridStyle}">
+
+                                <Frame Style="{StaticResource AvatarFrameStyle}"
+                                       Grid.Column="0">
+                                    <Image  Style="{StaticResource AvatarImageStyle}"
+                                            Source="pedro.jpeg" />
+                                </Frame>
+
+                                <Label Grid.Column="1"
+                                       Text="{Binding DisplayName}"
+                                       Style="{StaticResource NameLabelStyle}" />
+
+                                <Label Style="{StaticResource CountLabelStyle}"
+                                       Text="{Binding numView}"
+                                       Grid.Column="2" />
+
+                                <Grid.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding Path = BindingContext.TapContactCommand, Source={Reference ChatContact}}"
+                                                          CommandParameter="{Binding}" />
+                                </Grid.GestureRecognizers>
+
+                            </Grid>
+                        </Frame>
+
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>
+    </VerticalStackLayout>
+
+</ContentPage>
