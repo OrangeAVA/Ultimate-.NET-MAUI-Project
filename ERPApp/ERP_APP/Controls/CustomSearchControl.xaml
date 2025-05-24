@@ -17,7 +17,7 @@
                    Margin="10,0,0,0"
                    FontSize="15"
                    VerticalOptions="Center"
-                   HorizontalOptions="FillAndExpand"
+                   HorizontalOptions="Fill"
                    BackgroundColor="Transparent" />
             <Image Source="cancel.png"
                    Grid.Column="2"

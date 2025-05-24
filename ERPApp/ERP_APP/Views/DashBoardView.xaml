@@ -6,7 +6,7 @@
              Title="DashBoard">
     <VerticalStackLayout>
         <CollectionView ItemsSource="{Binding OptionDashBoard}"
-                        VerticalOptions="FillAndExpand"
+                        VerticalOptions="Fill"
                         x:Name="CollectionItems"
                         Margin="15">
             <CollectionView.ItemsLayout>

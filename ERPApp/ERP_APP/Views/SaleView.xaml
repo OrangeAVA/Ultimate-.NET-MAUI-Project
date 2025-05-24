@@ -9,7 +9,7 @@
     <ScrollView>
         <StackLayout>
         <Grid RowDefinitions="auto, auto,auto,*, auto, auto"
-              VerticalOptions="FillAndExpand">
+              VerticalOptions="Fill">
 
             <Frame Grid.Row="0"
                    Padding="5,2"
@@ -36,7 +36,7 @@
                                   Margin="0"
                                   Padding="20">
                 <CollectionView ItemsSource="{Binding Items}"
-                                HorizontalOptions="FillAndExpand"
+                                HorizontalOptions="Fill"
                                 MinimumHeightRequest="350"
                                 x:Name="CollectionItems">
                     <CollectionView.ItemTemplate>
@@ -98,7 +98,7 @@
                        HorizontalTextAlignment="Center"
                        FontSize="Title"/>
 
-                <HorizontalStackLayout HorizontalOptions="CenterAndExpand" 
+                <HorizontalStackLayout HorizontalOptions="Center" 
                                        Padding="25,1,25,25">
                         <CheckBox IsChecked="{Binding IsCkecked}"/>
                     <Label Text="Confirmar Venta"

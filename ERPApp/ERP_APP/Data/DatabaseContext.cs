@@ -90,7 +90,7 @@ namespace ERP_APP.Data
             await CreateTableIfNotExists<TTable>();
             return await Database.DeleteAllAsync<TTable>() > 0;
         }
-        //Cerrar Conexión
+        //Close Connection
         public async ValueTask DisposeAsync() => await _connection?.CloseAsync();
     }
 }

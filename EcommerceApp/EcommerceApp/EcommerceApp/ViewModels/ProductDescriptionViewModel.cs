@@ -103,8 +103,8 @@ public partial class ProductDescriptionViewModel : BaseViewModel, IQueryAttribut
             {
                 var favorite = (await _dateBaseContext.GetFileteredAsync<Favorites>(
                     x => x.Product_Id == idProd))
-                    .Select(x => (Guid?)x.Id) // Convertir a Nullable<Guid>
-                    .FirstOrDefault()?.ToString(); // Usar el operador de acceso condicional
+                    .Select(x => (Guid?)x.Id) // Convert to Nullable<Guid>
+                    .FirstOrDefault()?.ToString(); // Using the conditional access operator
 
 
                 if (!string.IsNullOrWhiteSpace(favorite))

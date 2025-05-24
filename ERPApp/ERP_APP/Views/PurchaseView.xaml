@@ -8,7 +8,7 @@
              Title="PurchaseView">
     <StackLayout>
         <Grid RowDefinitions="auto, 30, *, auto"
-              VerticalOptions="FillAndExpand">
+              VerticalOptions="Fill">
 
             <controls:CustomSearchControl Grid.Row="0" />
 
@@ -20,7 +20,7 @@
                                   Margin="0,0,0,0"
                                   Padding="20,0,20,20">
                 <CollectionView ItemsSource="{Binding Items}"
-                                HorizontalOptions="FillAndExpand"
+                                HorizontalOptions="Fill"
                                 x:Name="CollectionItems"
                                 HeightRequest="500">
                     <CollectionView.ItemTemplate>
