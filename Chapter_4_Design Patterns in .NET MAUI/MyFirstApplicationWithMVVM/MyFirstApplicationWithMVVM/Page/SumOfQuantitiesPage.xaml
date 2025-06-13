@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstApplicationWithMVVM.Page.SumOfQuantitiesPage"
+             Title="Sum Of Quantities">
+    
+    <StackLayout>
+
+
+        <Frame Style="{StaticResource StyledFrame}" Margin="20">
+            <Label Text="{Binding Result}" Margin="10" />
+        </Frame>
+
+        <HorizontalStackLayout HorizontalOptions="Center"
+                               Spacing="10"
+                               Margin="20">
+
+            <Frame Style="{StaticResource StyledFrame}">
+                <Entry Style="{StaticResource StyledEntryKeyboard}" 
+                       Placeholder="Number One"
+                       Text="{Binding NumberOne}"/>
+            </Frame>
+            
+            <Frame Style="{StaticResource StyledFrame}">
+                <Entry Style="{StaticResource StyledEntryKeyboard}"
+                       Placeholder="Number Two"
+                       Text="{Binding NumberTwo}"/>
+            </Frame>
+
+            <Button Style="{StaticResource StyledButton}"
+                    Command="{Binding AddCommand}"
+                    Text="Add" />
+
+        </HorizontalStackLayout>
+        
+    </StackLayout>
+</ContentPage>

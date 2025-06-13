@@ -1,0 +1,846 @@
+{
+  "Version": 1,
+  "Hash": "IF7T2KoYE8m4SQUdQf2hFDiaYiY5M+SsSi3PqKR3QqM=",
+  "Source": "MyFirstAppMauiBlazor",
+  "BasePath": "/",
+  "Mode": "Root",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "MyFirstAppMauiBlazor\\wwwroot",
+      "Source": "MyFirstAppMauiBlazor",
+      "ContentRoot": "D:\\Git\\Ultimate MAUI Proyects Book\\Ultimate-.NET-MAUI-Project\\Chapter_5_Using Blazor Components In .NET MAUI\\MyFirstAppMauiBlazor\\MyFirstAppMauiBlazor\\wwwroot\\",
+      "BasePath": "/",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\Git\\Ultimate MAUI Proyects Book\\Ultimate-.NET-MAUI-Project\\Chapter_5_Using Blazor Components In .NET MAUI\\MyFirstAppMauiBlazor\\MyFirstAppMauiBlazor\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\MyFirstAppMauiBlazor.styles.css",
+      "SourceId": "MyFirstAppMauiBlazor",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Git\\Ultimate MAUI Proyects Book\\Ultimate-.NET-MAUI-Project\\Chapter_5_Using Blazor Components In .NET MAUI\\MyFirstAppMauiBlazor\\MyFirstAppMauiBlazor\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\",
+      "BasePath": "/",
+      "RelativePath": "MyFirstAppMauiBlazor#[.{fingerprint}]?.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "Fingerprint": "gkbmlbhkki",
+      "Integrity": "EDWYw2pUv3wuczy+EgnRNIFUhiYkuFWICaqJMTF8JaQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "D:\\Git\\Ultimate MAUI Proyects Book\\Ultimate-.NET-MAUI-Project\\Chapter_5_Using Blazor Components In .NET MAUI\\MyFirstAppMauiBlazor\\MyFirstAppMauiBlazor\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\MyFirstAppMauiBlazor.styles.css"
+    },
+    {
+      "Identity": "D:\\Git\\Ultimate MAUI Proyects Book\\Ultimate-.NET-MAUI-Project\\Chapter_5_Using Blazor Components In .NET MAUI\\MyFirstAppMauiBlazor\\MyFirstAppMauiBlazor\\obj\\Debug\\net8.0-android\\scopedcss\\projectbundle\\MyFirstAppMauiBlazor.bundle.scp.css",
+      "SourceId": "MyFirstAppMauiBlazor",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Git\\Ultimate MAUI Proyects Book\\Ultimate-.NET-MAUI-Project\\Chapter_5_Using Blazor Components In .NET MAUI\\MyFirstAppMauiBlazor\\MyFirstAppMauiBlazor\\obj\\Debug\\net8.0-android\\scopedcss\\projectbundle\\",
+      "BasePath": "/",
+      "RelativePath": "MyFirstAppMauiBlazor#[.{fingerprint}]!.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "Fingerprint": "gkbmlbhkki",
+      "Integrity": "EDWYw2pUv3wuczy+EgnRNIFUhiYkuFWICaqJMTF8JaQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "D:\\Git\\Ultimate MAUI Proyects Book\\Ultimate-.NET-MAUI-Project\\Chapter_5_Using Blazor Components In .NET MAUI\\MyFirstAppMauiBlazor\\MyFirstAppMauiBlazor\\obj\\Debug\\net8.0-android\\scopedcss\\projectbundle\\MyFirstAppMauiBlazor.bundle.scp.css"
+    },
+    {
+      "Identity": "D:\\Git\\Ultimate MAUI Proyects Book\\Ultimate-.NET-MAUI-Project\\Chapter_5_Using Blazor Components In .NET MAUI\\MyFirstAppMauiBlazor\\MyFirstAppMauiBlazor\\wwwroot\\css\\app.css",
+      "SourceId": "MyFirstAppMauiBlazor",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Git\\Ultimate MAUI Proyects Book\\Ultimate-.NET-MAUI-Project\\Chapter_5_Using Blazor Components In .NET MAUI\\MyFirstAppMauiBlazor\\MyFirstAppMauiBlazor\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/app#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dex3usdpik",
+      "Integrity": "K1bY5kgLeD7nMlhLfmEK3TdjOVTQGBzyOIF4YwRlzuQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\app.css"
+    },
+    {
+      "Identity": "D:\\Git\\Ultimate MAUI Proyects Book\\Ultimate-.NET-MAUI-Project\\Chapter_5_Using Blazor Components In .NET MAUI\\MyFirstAppMauiBlazor\\MyFirstAppMauiBlazor\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "SourceId": "MyFirstAppMauiBlazor",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Git\\Ultimate MAUI Proyects Book\\Ultimate-.NET-MAUI-Project\\Chapter_5_Using Blazor Components In .NET MAUI\\MyFirstAppMauiBlazor\\MyFirstAppMauiBlazor\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/bootstrap/bootstrap.min#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6gzpyzhau4",
+      "Integrity": "SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Identity": "D:\\Git\\Ultimate MAUI Proyects Book\\Ultimate-.NET-MAUI-Project\\Chapter_5_Using Blazor Components In .NET MAUI\\MyFirstAppMauiBlazor\\MyFirstAppMauiBlazor\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "SourceId": "MyFirstAppMauiBlazor",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Git\\Ultimate MAUI Proyects Book\\Ultimate-.NET-MAUI-Project\\Chapter_5_Using Blazor Components In .NET MAUI\\MyFirstAppMauiBlazor\\MyFirstAppMauiBlazor\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/bootstrap/bootstrap.min.css#[.{fingerprint}]?.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8inm30yfxf",
+      "Integrity": "gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "D:\\Git\\Ultimate MAUI Proyects Book\\Ultimate-.NET-MAUI-Project\\Chapter_5_Using Blazor Components In .NET MAUI\\MyFirstAppMauiBlazor\\MyFirstAppMauiBlazor\\wwwroot\\css\\styles\\Calculator.css",
+      "SourceId": "MyFirstAppMauiBlazor",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Git\\Ultimate MAUI Proyects Book\\Ultimate-.NET-MAUI-Project\\Chapter_5_Using Blazor Components In .NET MAUI\\MyFirstAppMauiBlazor\\MyFirstAppMauiBlazor\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/styles/Calculator#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3is40p1lev",
+      "Integrity": "tUIuDfW/Nofn0W2+Q5zf1bA0i6Y36FahOcuRBP4GaoM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\styles\\Calculator.css"
+    },
+    {
+      "Identity": "D:\\Git\\Ultimate MAUI Proyects Book\\Ultimate-.NET-MAUI-Project\\Chapter_5_Using Blazor Components In .NET MAUI\\MyFirstAppMauiBlazor\\MyFirstAppMauiBlazor\\wwwroot\\favicon.png",
+      "SourceId": "MyFirstAppMauiBlazor",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Git\\Ultimate MAUI Proyects Book\\Ultimate-.NET-MAUI-Project\\Chapter_5_Using Blazor Components In .NET MAUI\\MyFirstAppMauiBlazor\\MyFirstAppMauiBlazor\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "favicon#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ifv42okdf2",
+      "Integrity": "4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon.png"
+    },
+    {
+      "Identity": "D:\\Git\\Ultimate MAUI Proyects Book\\Ultimate-.NET-MAUI-Project\\Chapter_5_Using Blazor Components In .NET MAUI\\MyFirstAppMauiBlazor\\MyFirstAppMauiBlazor\\wwwroot\\index.html",
+      "SourceId": "MyFirstAppMauiBlazor",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Git\\Ultimate MAUI Proyects Book\\Ultimate-.NET-MAUI-Project\\Chapter_5_Using Blazor Components In .NET MAUI\\MyFirstAppMauiBlazor\\MyFirstAppMauiBlazor\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "h8npxspw6d",
+      "Integrity": "4YKEnSHp0VsHt3HctLUemo8stOk1RBMo+Q+M/5elzb0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "css/app.css",
+      "AssetFile": "D:\\Git\\Ultimate MAUI Proyects Book\\Ultimate-.NET-MAUI-Project\\Chapter_5_Using Blazor Components In .NET MAUI\\MyFirstAppMauiBlazor\\MyFirstAppMauiBlazor\\wwwroot\\css\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3339"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"K1bY5kgLeD7nMlhLfmEK3TdjOVTQGBzyOIF4YwRlzuQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Sep 2024 22:02:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-K1bY5kgLeD7nMlhLfmEK3TdjOVTQGBzyOIF4YwRlzuQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.dex3usdpik.css",
+      "AssetFile": "D:\\Git\\Ultimate MAUI Proyects Book\\Ultimate-.NET-MAUI-Project\\Chapter_5_Using Blazor Components In .NET MAUI\\MyFirstAppMauiBlazor\\MyFirstAppMauiBlazor\\wwwroot\\css\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3339"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"K1bY5kgLeD7nMlhLfmEK3TdjOVTQGBzyOIF4YwRlzuQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Sep 2024 22:02:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dex3usdpik"
+        },
+        {
+          "Name": "label",
+          "Value": "css/app.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-K1bY5kgLeD7nMlhLfmEK3TdjOVTQGBzyOIF4YwRlzuQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.6gzpyzhau4.css",
+      "AssetFile": "D:\\Git\\Ultimate MAUI Proyects Book\\Ultimate-.NET-MAUI-Project\\Chapter_5_Using Blazor Components In .NET MAUI\\MyFirstAppMauiBlazor\\MyFirstAppMauiBlazor\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "162726"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Sep 2024 22:02:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6gzpyzhau4"
+        },
+        {
+          "Name": "label",
+          "Value": "css/bootstrap/bootstrap.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.css",
+      "AssetFile": "D:\\Git\\Ultimate MAUI Proyects Book\\Ultimate-.NET-MAUI-Project\\Chapter_5_Using Blazor Components In .NET MAUI\\MyFirstAppMauiBlazor\\MyFirstAppMauiBlazor\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "162726"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Sep 2024 22:02:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.css.8inm30yfxf.map",
+      "AssetFile": "D:\\Git\\Ultimate MAUI Proyects Book\\Ultimate-.NET-MAUI-Project\\Chapter_5_Using Blazor Components In .NET MAUI\\MyFirstAppMauiBlazor\\MyFirstAppMauiBlazor\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "449111"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Sep 2024 22:02:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8inm30yfxf"
+        },
+        {
+          "Name": "label",
+          "Value": "css/bootstrap/bootstrap.min.css.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.css.map",
+      "AssetFile": "D:\\Git\\Ultimate MAUI Proyects Book\\Ultimate-.NET-MAUI-Project\\Chapter_5_Using Blazor Components In .NET MAUI\\MyFirstAppMauiBlazor\\MyFirstAppMauiBlazor\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "449111"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Sep 2024 22:02:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/styles/Calculator.3is40p1lev.css",
+      "AssetFile": "D:\\Git\\Ultimate MAUI Proyects Book\\Ultimate-.NET-MAUI-Project\\Chapter_5_Using Blazor Components In .NET MAUI\\MyFirstAppMauiBlazor\\MyFirstAppMauiBlazor\\wwwroot\\css\\styles\\Calculator.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "391"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tUIuDfW/Nofn0W2+Q5zf1bA0i6Y36FahOcuRBP4GaoM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 11 Sep 2024 04:54:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3is40p1lev"
+        },
+        {
+          "Name": "label",
+          "Value": "css/styles/Calculator.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tUIuDfW/Nofn0W2+Q5zf1bA0i6Y36FahOcuRBP4GaoM="
+        }
+      ]
+    },
+    {
+      "Route": "css/styles/Calculator.css",
+      "AssetFile": "D:\\Git\\Ultimate MAUI Proyects Book\\Ultimate-.NET-MAUI-Project\\Chapter_5_Using Blazor Components In .NET MAUI\\MyFirstAppMauiBlazor\\MyFirstAppMauiBlazor\\wwwroot\\css\\styles\\Calculator.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "391"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tUIuDfW/Nofn0W2+Q5zf1bA0i6Y36FahOcuRBP4GaoM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 11 Sep 2024 04:54:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tUIuDfW/Nofn0W2+Q5zf1bA0i6Y36FahOcuRBP4GaoM="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.ifv42okdf2.png",
+      "AssetFile": "D:\\Git\\Ultimate MAUI Proyects Book\\Ultimate-.NET-MAUI-Project\\Chapter_5_Using Blazor Components In .NET MAUI\\MyFirstAppMauiBlazor\\MyFirstAppMauiBlazor\\wwwroot\\favicon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1148"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Sep 2024 22:02:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ifv42okdf2"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.png",
+      "AssetFile": "D:\\Git\\Ultimate MAUI Proyects Book\\Ultimate-.NET-MAUI-Project\\Chapter_5_Using Blazor Components In .NET MAUI\\MyFirstAppMauiBlazor\\MyFirstAppMauiBlazor\\wwwroot\\favicon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1148"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Sep 2024 22:02:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg="
+        }
+      ]
+    },
+    {
+      "Route": "index.h8npxspw6d.html",
+      "AssetFile": "D:\\Git\\Ultimate MAUI Proyects Book\\Ultimate-.NET-MAUI-Project\\Chapter_5_Using Blazor Components In .NET MAUI\\MyFirstAppMauiBlazor\\MyFirstAppMauiBlazor\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1073"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4YKEnSHp0VsHt3HctLUemo8stOk1RBMo+Q+M/5elzb0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 11 Sep 2024 04:55:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h8npxspw6d"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4YKEnSHp0VsHt3HctLUemo8stOk1RBMo+Q+M/5elzb0="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "D:\\Git\\Ultimate MAUI Proyects Book\\Ultimate-.NET-MAUI-Project\\Chapter_5_Using Blazor Components In .NET MAUI\\MyFirstAppMauiBlazor\\MyFirstAppMauiBlazor\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1073"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4YKEnSHp0VsHt3HctLUemo8stOk1RBMo+Q+M/5elzb0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 11 Sep 2024 04:55:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4YKEnSHp0VsHt3HctLUemo8stOk1RBMo+Q+M/5elzb0="
+        }
+      ]
+    },
+    {
+      "Route": "MyFirstAppMauiBlazor.bundle.scp.css",
+      "AssetFile": "D:\\Git\\Ultimate MAUI Proyects Book\\Ultimate-.NET-MAUI-Project\\Chapter_5_Using Blazor Components In .NET MAUI\\MyFirstAppMauiBlazor\\MyFirstAppMauiBlazor\\obj\\Debug\\net8.0-android\\scopedcss\\projectbundle\\MyFirstAppMauiBlazor.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5481"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EDWYw2pUv3wuczy+EgnRNIFUhiYkuFWICaqJMTF8JaQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Jun 2025 21:54:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EDWYw2pUv3wuczy+EgnRNIFUhiYkuFWICaqJMTF8JaQ="
+        }
+      ]
+    },
+    {
+      "Route": "MyFirstAppMauiBlazor.gkbmlbhkki.bundle.scp.css",
+      "AssetFile": "D:\\Git\\Ultimate MAUI Proyects Book\\Ultimate-.NET-MAUI-Project\\Chapter_5_Using Blazor Components In .NET MAUI\\MyFirstAppMauiBlazor\\MyFirstAppMauiBlazor\\obj\\Debug\\net8.0-android\\scopedcss\\projectbundle\\MyFirstAppMauiBlazor.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5481"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EDWYw2pUv3wuczy+EgnRNIFUhiYkuFWICaqJMTF8JaQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Jun 2025 21:54:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gkbmlbhkki"
+        },
+        {
+          "Name": "label",
+          "Value": "MyFirstAppMauiBlazor.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EDWYw2pUv3wuczy+EgnRNIFUhiYkuFWICaqJMTF8JaQ="
+        }
+      ]
+    },
+    {
+      "Route": "MyFirstAppMauiBlazor.gkbmlbhkki.styles.css",
+      "AssetFile": "D:\\Git\\Ultimate MAUI Proyects Book\\Ultimate-.NET-MAUI-Project\\Chapter_5_Using Blazor Components In .NET MAUI\\MyFirstAppMauiBlazor\\MyFirstAppMauiBlazor\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\MyFirstAppMauiBlazor.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5481"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EDWYw2pUv3wuczy+EgnRNIFUhiYkuFWICaqJMTF8JaQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Jun 2025 21:54:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gkbmlbhkki"
+        },
+        {
+          "Name": "label",
+          "Value": "MyFirstAppMauiBlazor.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EDWYw2pUv3wuczy+EgnRNIFUhiYkuFWICaqJMTF8JaQ="
+        }
+      ]
+    },
+    {
+      "Route": "MyFirstAppMauiBlazor.styles.css",
+      "AssetFile": "D:\\Git\\Ultimate MAUI Proyects Book\\Ultimate-.NET-MAUI-Project\\Chapter_5_Using Blazor Components In .NET MAUI\\MyFirstAppMauiBlazor\\MyFirstAppMauiBlazor\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\MyFirstAppMauiBlazor.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5481"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EDWYw2pUv3wuczy+EgnRNIFUhiYkuFWICaqJMTF8JaQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Jun 2025 21:54:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EDWYw2pUv3wuczy+EgnRNIFUhiYkuFWICaqJMTF8JaQ="
+        }
+      ]
+    }
+  ]
+}

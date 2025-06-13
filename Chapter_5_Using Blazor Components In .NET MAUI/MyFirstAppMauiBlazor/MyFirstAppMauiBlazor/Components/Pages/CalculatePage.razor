@@ -1,0 +1,23 @@
+﻿@page "/"
+@using System.Collections.Generic
+@using System.ComponentModel
+@using System.Windows.Input
+@using MyFirstAppMauiBlazor.ViewModels
+
+@inject CalculateViewModel ViewModel
+
+
+<div class="calculator">
+    <div class="display">
+        <p>@ViewModel.DisplayValue</p>
+    </div>
+    <div class="buttons">
+
+        @foreach (string? button in ViewModel.ButtonValues)
+        {
+            <button @onclick="() => ViewModel.OperationsCommand.Execute(button)">
+                @button
+            </button>
+        }
+    </div>
+</div>
