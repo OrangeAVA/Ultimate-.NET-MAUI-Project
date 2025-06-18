@@ -2,9 +2,9 @@ using MauiTalk.ViewModels;
 
 namespace MauiTalk.Views;
 
-public partial class MessagesPages : ContentPage
+public partial class MessagesPage : ContentPage
 {
-	public MessagesPages(MessagesViewModel viewModel)
+	public MessagesPage(MessagesViewModel viewModel)
 	{
 		InitializeComponent();
 		this.BindingContext = viewModel;

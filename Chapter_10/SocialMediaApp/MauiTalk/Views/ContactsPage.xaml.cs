@@ -3,9 +3,9 @@ using MauiTalk.ViewModels;
 
 namespace MauiTalk.Views;
 
-public partial class ContactsPages : ContentPage
+public partial class ContactsPage : ContentPage
 {
-	public ContactsPages(ContactsViewModel viewModel)
+	public ContactsPage(ContactsViewModel viewModel)
 	{
 		InitializeComponent();
 		this.BindingContext = viewModel;

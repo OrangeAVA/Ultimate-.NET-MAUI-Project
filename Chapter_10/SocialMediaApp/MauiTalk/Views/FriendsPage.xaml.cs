@@ -3,9 +3,9 @@ using MauiTalk.ViewModels;
 
 namespace MauiTalk.Views;
 
-public partial class FriendsPages : ContentPage
+public partial class FriendsPage : ContentPage
 {
-	public FriendsPages(FriendsViewModel viewmodel)
+	public FriendsPage(FriendsViewModel viewmodel)
 	{
 		InitializeComponent();
 		this.BindingContext = viewmodel;

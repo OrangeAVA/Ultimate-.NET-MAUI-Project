@@ -68,13 +68,31 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Views\ChatPage.xaml.cs">
+	    <DependentUpon>ChatPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\ContactsPage.xaml.cs">
+	    <DependentUpon>ContactsPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\FriendsPage.xaml.cs">
+	    <DependentUpon>FriendsPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\MessagesPage.xaml.cs">
+	    <DependentUpon>MessagesPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\ProfilePage.xaml.cs">
+	    <DependentUpon>ProfilePage.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiXaml Update="Controls\NewPostPopup.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Controls\PinPopup.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\MessagesPages.xaml">
+	  <MauiXaml Update="Views\MessagesPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

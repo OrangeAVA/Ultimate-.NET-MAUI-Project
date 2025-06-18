@@ -25,20 +25,20 @@ namespace MauiTalk
 #endif
             builder.Services.AddSingleton<DatabaseContext>();
             builder.Services.AddSingleton<ContactsViewModel>();
-            builder.Services.AddTransient<ContactsPages>();
+            builder.Services.AddTransient<ContactsPage>();
             builder.Services.AddSingleton<MessagesViewModel>();
-            builder.Services.AddTransient<MessagesPages>();
+            builder.Services.AddTransient<MessagesPage>();
             builder.Services.AddSingleton<SignalRService>();
-            builder.Services.AddTransient<ProfilePages>();
+            builder.Services.AddTransient<ProfilePage>();
             builder.Services.AddSingleton<ProfileViewModel>();
             builder.Services.AddSingleton<ChatViewModel>();
-            builder.Services.AddTransient<ChatPages>();
-            builder.Services.AddTransient<FriendsPages>();
+            builder.Services.AddTransient<ChatPage>();
+            builder.Services.AddTransient<FriendsPage>();
             builder.Services.AddSingleton<FriendsViewModel>();
 
 
-            Routing.RegisterRoute("MessagesPage", typeof(MessagesPages));
-            Routing.RegisterRoute("ProfilePage", typeof(ProfilePages));
+            Routing.RegisterRoute("MessagesPage", typeof(MessagesPage));
+            Routing.RegisterRoute("ProfilePage", typeof(ProfilePage));
 
             return builder.Build();
         }

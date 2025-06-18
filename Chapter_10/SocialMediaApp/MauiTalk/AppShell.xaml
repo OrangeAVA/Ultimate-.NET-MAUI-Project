@@ -35,16 +35,16 @@
     <TabBar>
 
         <ShellContent Title="Chat"
-                      ContentTemplate="{DataTemplate views:ChatPages}"
+                      ContentTemplate="{DataTemplate views:ChatPage}"
                       Icon="icon_chats.png" />
         <ShellContent Title="News"
-                      ContentTemplate="{DataTemplate views:FriendsPages}"
+                      ContentTemplate="{DataTemplate views:FriendsPage}"
                       Icon="icon_friends.png" />
         <ShellContent Title="Contacts"
-                      ContentTemplate="{DataTemplate views:ContactsPages}"
+                      ContentTemplate="{DataTemplate views:ContactsPage}"
                       Icon="icon_phone.png" />
         <ShellContent Title="Profile"
-                      ContentTemplate="{DataTemplate views:ProfilePages}"
+                      ContentTemplate="{DataTemplate views:ProfilePage}"
                       Icon="icon_profile.png" />
     </TabBar>
 
